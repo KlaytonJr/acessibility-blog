@@ -52,7 +52,7 @@ const LoginStyle = {
 export default function Header () {   
 	return (
         <div style={HeaderStyle}>
-            <span style={LogoStyle}>Klayton Júnior</span>
+            <span style={LogoStyle}>MyBlog</span>
             <div style={LinksStyle}>
                 <span style={LinkStyle}>Home</span>
                 <span style={LinkStyle}>Mais Populares</span>

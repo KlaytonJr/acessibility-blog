@@ -38,8 +38,8 @@ const RefStyle = {
 export default function Footer () {
 	return (
         <div style={HeaderStyle}>
-            <span style={LogoStyle}>Klayton Júnior</span>
-            <span style={RefStyle}>© 2022 Klayton Júnior</span>
+            <span style={LogoStyle}>MyBlog</span>
+            <span style={RefStyle}>© 2022 MyBlog</span>
         </div>
     )
 }
