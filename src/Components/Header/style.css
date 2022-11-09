@@ -1,0 +1,13 @@
+.LoginStyle {
+    padding: 8px 50px;
+	box-sizing: border-box;
+	background: rgba(0,234,100,1.00);
+	border-radius: 8px;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1000px) {
+    .LoginStyle {
+        display: none;
+    }
+}

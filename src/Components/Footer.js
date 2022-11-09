@@ -3,6 +3,8 @@ import React from 'react'
 const HeaderStyle = {
 	position: "relative",
 	bottom: 0,
+
+    width: "100%",
 	
     padding: "20px 40px",
     textAlign: "center",

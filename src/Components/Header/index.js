@@ -1,4 +1,6 @@
 import React from 'react'
+import "./style.css";
+import { useNavigate } from "react-router-dom";
 
 const HeaderStyle = {
     padding: "20px 40px",
@@ -22,6 +24,7 @@ const LogoStyle = {
 	fontSize: "27px",
 	fontWeight: "400",
 	lineHeight: "31.640625px",
+    cursor: "pointer"
 }
 
 const LinksStyle = {
@@ -39,6 +42,7 @@ const LinkStyle = {
 	fontSize: "16px",
 	fontWeight: "400",
 	lineHeight: "18.75px",
+    cursor: "pointer",
 }
 
 const LoginStyle = {
@@ -49,18 +53,20 @@ const LoginStyle = {
     fontSize: "16px",
 }
 
-export default function Header () {   
+export default function Header () {  
+    let navigate = useNavigate();
+
 	return (
         <div style={HeaderStyle}>
-            <span style={LogoStyle}>MyBlog</span>
+            <span style={LogoStyle} onClick={() => navigate(`/`)} >MyBlog</span>
             <div style={LinksStyle}>
-                <span style={LinkStyle}>Home</span>
-                <span style={LinkStyle}>Mais Populares</span>
-                <span style={LinkStyle}>Newsletter</span>
+                <span style={LinkStyle} onClick={() => navigate(`/`)}>Home</span>
+                <span style={LinkStyle} onClick={() => navigate(`/publication?id=1`)}>Mais Populares</span>
+                {/* <span style={LinkStyle}>Newsletter</span> */}
             </div>
-            <div>
-                <span style={LoginStyle}>Login</span>
-            </div>
+            {/* <div>
+                <span className='LoginStyle'>Login</span>
+            </div> */}
         </div>
 	)
 }

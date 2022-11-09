@@ -1,0 +1,64 @@
+.PrincipalStyle {
+    display: flex;
+    margin: 15px 0;
+
+    width: 80%;
+    cursor: pointer;
+    justify-content: center;
+}
+
+.ImageStyle {
+    width: 350px;
+    height: 250px;
+}
+
+.content {
+    width: 80%;
+    margin-left: 40px;
+}
+
+.content h2 {
+    margin-bottom: 5px;
+}
+
+.content span {
+    color: #717171;
+    font-size: 14px;
+}
+
+.content p {
+    color: #717171;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.content div {
+    width: 100%;
+}
+
+.content div span {
+    display: flex;
+    justify-content: end;
+    color: #717171;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+    .PrincipalStyle {
+        flex-direction: column;
+    }
+
+    .content {
+        margin-left: 0px;
+    }
+
+    .ImageStyle {
+        width: 300px;
+        height: 200px;
+    }
+}
+    

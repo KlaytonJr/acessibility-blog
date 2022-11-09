@@ -1,0 +1,18 @@
+.PublicationStyle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+    margin: 60px auto;
+}
+
+.ImageStylePublication {
+    width: 60%;
+    height: 40%;
+}
+
+.contentPublication {
+    white-space: break-spaces;
+}
